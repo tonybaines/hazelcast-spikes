@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+dependencies {
+    compile 'com.hazelcast:hazelcast:2.5.1'
+    testCompile 'junit:junit:4.10'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.6'
+}
